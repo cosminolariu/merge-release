@@ -40,6 +40,6 @@ git show-ref # useful for debugging
 git branch --verbose
 
 # Dependencies are installed at build time
-node /src/merge-release-run.js "$@" || exit 1
+#node /src/merge-release-run.js "$@" || exit 1
 
-git push "${remote_repo}" --tags
+#git push "${remote_repo}" --tags
