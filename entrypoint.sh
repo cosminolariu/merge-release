@@ -28,7 +28,7 @@ fi
 
 # initialize git
 remote_repo="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-git -v
+git --version
 git config http.sslVerify false
 # git config user.name "Merge Release"
 # git config user.email "actions@users.noreply.github.com"
