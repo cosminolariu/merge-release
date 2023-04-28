@@ -41,7 +41,7 @@ jobs:
         key: 18.x-${{ runner.OS }}-build-${{ hashFiles('package.json') }}
     - name: Build
       if: steps.cache-modules.outputs.cache-hit != 'true'
-      run: npm install
+      run: cd src; npm install
     - name: Test
       run: npm_config_yes=true npx best-test@latest
 
